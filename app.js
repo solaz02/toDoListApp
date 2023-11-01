@@ -27,3 +27,9 @@ addForm.addEventListener('submit', e =>{
 });
 
 // Delete Todos
+list.addEventListener('click', e => {
+
+    if(e.target.classList.contains('delete')){
+        e.target.parentElement.remove();
+    }
+});
